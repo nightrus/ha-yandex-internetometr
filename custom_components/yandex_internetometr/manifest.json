@@ -1,0 +1,14 @@
+{
+  "domain": "yandex_internetometr",
+  "name": "Яндекс Интернетометр",
+  "codeowners": ["@nightrus"],
+  "config_flow": true,
+  "dependencies": ["http", "frontend"],
+  "documentation": "https://github.com/nightrus/ha-yandex-internetometr",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/nightrus/ha-yandex-internetometr/issues",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "1.0.0"
+}

@@ -1,0 +1,37 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Yandex Internetometr",
+        "description": "Internet speed test against Yandex Internetometr servers. One run takes about 20 seconds and moves a few hundred megabytes each way (about a gigabyte on a gigabit line)."
+      }
+    },
+    "abort": {
+      "already_configured": "Already configured",
+      "single_instance_allowed": "Already configured"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "download": {
+        "name": "Download"
+      },
+      "upload": {
+        "name": "Upload"
+      },
+      "ping": {
+        "name": "Ping"
+      }
+    },
+    "button": {
+      "run_now": {
+        "name": "Run test"
+      }
+    },
+    "number": {
+      "update_interval": {
+        "name": "Test interval"
+      }
+    }
+  }
+}

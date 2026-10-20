@@ -1,0 +1,37 @@
+Yandex Internetometr for Home Assistant (nightrus/ha-yandex-internetometr)
+Copyright 2026 nightrus
+
+This product is a fork of, and includes software developed by Nikita Erilov:
+
+  * ha-yainternetometr — Yandex Internetometr Home Assistant Integration
+    https://github.com/ErilovNikita/ha-yainternetometr
+    Copyright 2025 Erilov Nikita, Apache License 2.0
+
+  * yaspeedtest — Python client for the Yandex Internetometr speed test
+    https://github.com/ErilovNikita/yaspeedtest
+    https://pypi.org/project/yaspeedtest/
+    Copyright 2025 Nikita Erilov, Apache License 2.0
+
+The brand icon (custom_components/yandex_internetometr/brand/) is taken from
+ha-yainternetometr (docs/img).
+
+Modifications by nightrus, 2026 (see README, section «Что исправлено»):
+  - speedtest.py is derived from yaspeedtest/client.py: download and upload are
+    measured as the aggregate throughput of parallel streams over a fixed time
+    window; upload sends the real probe volume (probe size is in KiB) and counts
+    only server-confirmed data;
+  - coordinator.py is derived from ha-yainternetometr/__init__.py; the upload
+    fallback chain is removed;
+  - new domain, entities, card and translations.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
